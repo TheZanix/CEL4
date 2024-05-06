@@ -1,6 +1,6 @@
 
 function identificarTemperatura() {
-    let temperatura = parseInt(prompt("ingrese la temperatura actual en grados Celsius"));
+    let temperatura = parseInt(prompt("ingrese temperatura actual en Celsius"));
 
     if (temperatura < 0) {
         document.getElementById("resultado").innerHTML = "Hace frío";
@@ -9,6 +9,6 @@ function identificarTemperatura() {
     } else if (temperatura > 25) { 
         document.getElementById("resultado").innerHTML = "Hace calor";
     } else {
-        document.getElementById("resultado").innerHTML = "Valor incorrecto";
+        document.getElementById("resultado").innerHTML = "Incorrecto";
     }
 }
