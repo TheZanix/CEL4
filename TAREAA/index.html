@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería Interactiva</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Galería Interactiva de Imágenes</h1>
+  <div class="image-container">
+    <img src="images.png" alt="Imagen 1" onclick="changeImage(this)">
+    <button onclick="showDescription(this)">Descripción</button>
+    <p class="description">Linux</p>
+  </div>
+  <div class="image-container">
+    <img src="RYFAs9jE_400x400.jpg" alt="Imagen 2" onclick="changeImage(this)">
+    <button onclick="showDescription(this)">Descripción</button>
+    <p class="description">Windows</p>
+  </div>
+  <h2>Lista de Tareas</h2>
+  <ul id="taskList">
+    <li class="task">
+      <span>Comprar una placa madre compatible con todos los componentes</span>
+      <button onclick="completeTask(this)">Completar</button>
+  </li>
+
+  <li class="task">
+      <span>Compra un procesador compatible con la placa(AMD/Intel) </span>
+      <button onclick="completeTask(this)">Completar</button>
+  </li>
+
+  <li class="task">
+      <span>Compra una grafica con la misma potencia que el procesador</span>
+      <button onclick="completeTask(this)">Completar</button>
+  </li>
+
+  </ul>
+  <h2>Productos</h2>
+  <div class="product-card">
+    <h2>ryzen 5 3400g</h2>
+    <p class="price">$70.00</p>
+    <button onclick="applyDiscount(this)">Aplicar descuento</button>
+  </div>
+  <div class="product-card">
+    <h2>Pc gamer ryzen 5 3400g/16gb ram/ssd 500gb</h2>
+    <p class="price">350.00</p>
+    <button onclick="applyDiscount(this)">Aplicar descuento</button>
+  </div>
+
+  <div class="product-card">
+    <h2>Video NVIDIA GeForce RTX3060 Dual O12G</h2>
+    <p class="price">$350.00</p>
+    <button onclick="applyDiscount(this)">Aplicar descuento</button>
+  </div>
+
+  <div class="product-card">
+    <h2>Desktop Gamer AMD Ryzen 9 7950X3D NVIDIA GeForce RTX 4090 32GB 2TB SSD</h2>
+    <p class="price">$4500.00</p>
+    <button onclick="applyDiscount(this)">Aplicar descuento</button>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+</html>
