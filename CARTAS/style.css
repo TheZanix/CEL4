@@ -1,0 +1,18 @@
+body {
+    background-image: url('cart.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+.gold {
+color: #ffe431;
+}
+
+.container {
+    text-align: center;
+  }
+
+.card-body{
+  background-color: #384963;
+  border-color: #ffe431;
+}
+
