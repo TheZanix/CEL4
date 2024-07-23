@@ -1,0 +1,44 @@
+.container{
+    width: 950px;
+    background-color: grey;
+    padding: 20px;
+    margin: 0px;
+}
+
+.nav{
+    width: 950px;
+    height: 300px;
+    background-color: green;
+    margin: 0px auto 
+}
+
+.nav-secundario{
+    height: 300px;
+    width: 150px;
+    background-color: blue;
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.main{
+    background-color: red;
+    width: 700px;
+    height: 400px;
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px;
+}
+
+.yellow{
+    height: 200px;
+    width: 200px;
+    background-color: yellow;
+    display: inline-block;
+}
+
+.purple{
+width: 660px;
+height: 120px;
+margin: 10px;
+background-color: blueviolet;
+}
