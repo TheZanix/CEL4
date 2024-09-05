@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+        .margin {
+            background-color: #D35400;
+            padding: 20px;
+            width: 400px;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .border {
+            background-color: #E59866;
+            padding: 20px;
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .padding {
+            background-color: #3498DB;
+            padding: 20px;
+            width: 80%;
+            height: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+        .content {
+            background-color: #85C1E9;
+            width: 80%;
+            height: 60%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #2C3E50;
+            font-family: Arial, sans-serif;
+        }
+        .label {
+            position: absolute;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: #2C3E50;
+        }
+        .margin > .label {
+            top: 5px;
+            left: 10px;
+        }
+        .border > .label {
+            top: 5px;
+            left: 10px;
+        }
+        .padding > .label {
+            top: 5px;
+            left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="margin">
+        <span class="label">Margin</span>
+        <div class="border">
+            <span class="label">Border</span>
+            <div class="padding">
+                <span class="label">Padding</span>
+                <div class="content">Content</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
