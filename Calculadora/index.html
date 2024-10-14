@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-logo">calculadora</a>
+            <ul class="navbar-menu"></ul>
+        </div>
+    </nav>
+    <div class="calculadora">
+        <h2>Calculadora</h2>
+        <div id="display-container">
+            <div id="display">0</div>
+        </div>
+        <div class="botones">
+            <button onclick="presionar(7)">7</button>
+            <button onclick="presionar(8)">8</button>
+            <button onclick="presionar(9)">9</button>
+            <button class="operador" onclick="establecerOperacion('/')">÷</button>
+            <button onclick="presionar(4)">4</button>
+            <button onclick="presionar(5)">5</button>
+            <button onclick="presionar(6)">6</button>
+            <button class="operador" onclick="establecerOperacion('*')">×</button>
+            <button onclick="presionar(1)">1</button>
+            <button onclick="presionar(2)">2</button>
+            <button onclick="presionar(3)">3</button>
+            <button class="operador" onclick="establecerOperacion('-')">−</button>
+            <button onclick="limpiar()">C</button>
+            <button onclick="presionar(0)">0</button>
+            <button onclick="presionar('.')">.</button>
+            <button class="operador" onclick="establecerOperacion('+')">+</button>
+        </div>
+        <button onclick="calcular()" style="width: 100%; margin-top: 5px; background-color: #5cb85c; color: white;">=</button>
+        <div id="resultado"></div>
+        <div id="historial"></div>
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
